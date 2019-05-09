@@ -1,4 +1,4 @@
-Extension for [Hyper](https://hyper.is) that allows you to send slack messages in your terminal.
+Extension for [Hyper](https://hyper.is) that let's you read Slack channel history and send messages to public channels through a closable chat window.
 
 ## How to use
 
