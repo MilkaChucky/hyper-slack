@@ -1,0 +1,46 @@
+{
+  "name": "hyper-slack",
+  "version": "0.0.1",
+  "description": "Slack plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilkaChucky/hyper-slack"
+  },
+  "keywords": [
+    "hyper-slack",
+    "hyperslack",
+    "hyper",
+    "hyper.is",
+    "hyper.app",
+    "slack",
+    "plugin"
+  ],
+  "author": "Péter Simon",
+  "contributors": [
+    "Jeremi Emánuel Kádár",
+    "Márk Ocskó",
+    "Róbert Sánta",
+    "Anett Jónás",
+    "Fruzsina Tóth"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "browser-env": "^3.2.6",
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.1",
+    "@slack/web-api": "^5.0.1"
+  },
+  "ava": {
+    "require": [
+      "./test/_setup-browser-env.js"
+    ]
+  }
+}
