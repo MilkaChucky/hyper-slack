@@ -181,7 +181,6 @@ exports.decorateTerm = (Term, {React}) => {
                 return;
 
             try {
-                console.log(this.state.textInput);
                 await postMessage(this.getSession(this.userTokenKey), this.selectedChannel, this.state.textInput);
                 this.setState({textInput: ''});
             } catch (error) {
@@ -191,7 +190,6 @@ exports.decorateTerm = (Term, {React}) => {
 
         async handleSelectClick(event) {
             try {
-                console.log("Selected channel: " + event.target.value);
                 this.isChannelSelectorActive = false;
                 this.forceUpdate();
                 this.selectedChannel = event.target.value;
@@ -207,7 +205,6 @@ exports.decorateTerm = (Term, {React}) => {
             try {
                 const token = this.getSession(this.userTokenKey);
                 const ch = await getChannels(token);
-                console.log(ch);
                 this.setState({channels: ch});
             } catch (error) {
                 console.log(error);

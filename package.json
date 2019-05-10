@@ -1,7 +1,7 @@
 {
   "name": "hyper-slack",
-  "version": "0.0.1",
-  "description": "Slack plugin",
+  "version": "1.0.1",
+  "description": "Slack plugin for Hyper",
   "main": "src/index.js",
   "scripts": {
     "test": "ava",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MilkaChucky/hyper-slack"
+    "url": "git+https://github.com/MilkaChucky/hyper-slack.git"
   },
   "keywords": [
     "hyper-slack",
@@ -42,5 +42,12 @@
     "require": [
       "./test/_setup-browser-env.js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/MilkaChucky/hyper-slack/issues"
+  },
+  "homepage": "https://github.com/MilkaChucky/hyper-slack#readme",
+  "directories": {
+    "test": "test"
   }
 }
